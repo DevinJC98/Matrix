@@ -1,0 +1,58 @@
+
+body
+{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin: 0;
+    font-size: 32px;
+    font-weight: strong;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgba(0, 0, 0, 0.908);
+    color: rgb(5, 173, 5);
+    letter-spacing:  3px;
+    word-spacing: 2px;
+    text-shadow: 0 0 10px rgba(5, 173, 5, 0.777);
+    
+}
+
+  #yooba{
+    
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+  }
+  button{
+    margin:20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 7px solid rgb(5, 173, 5);
+    border-radius: 10px;
+    color: rgb(5, 173, 5);
+    font-size: 32px;
+    font-weight: strong;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 0 0 15px rgba(5, 173, 5, 0.777);
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(5, 173, 5, 0.777);
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px)
+  {
+    body
+    {
+      font-size: 16px;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      text-shadow: 0 0 5px rgba(5, 173, 5, 0.777);
+
+    }
+    button
+    {
+      max-width: 25vw;
+      font-size: 28px;
+    }
+
+
+  }
