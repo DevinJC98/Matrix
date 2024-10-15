@@ -25,30 +25,34 @@
     <!--number at the end is the length between each print represented in milliseconds i think-->
     <script>
 
-        var words = "I am messing around with creating some javascript. The point of this code is to create a webpage that loads a paragraph a letter at a time. My initial thought was to find a way to number each letter then change the visibility on a delay for each letter. This would be wildy inneficient to code and I dont know enough javascript to do it. Dan suggested that I look into using javascript arrays. After a quick google I found a good article on medium to explain now to do this. A wee bit' o reading later and some testing I got everything up and running on a blank html file. After this I whipped up a nice little css page to pretty up the page and give it a nice matrix aesthetic, playing around with some code I haven't used before to make the letters and border glow and then bababooie. Cool website";
+       
+
+        var arrg = ["It Creates a Randomized String. ", "The Button Doesn't Know Anything. ", "It's Just Ones and Zeros Man. ", "I Try Not to Think About It. ", "Button Stuff, Don't Worry About It. "];
+        let rando = Math.floor(Math.random() * arrg.length);
 
         function printStringByLetter()
         {
+            let rando = Math.floor(Math.random() * arrg.length);
+
             var lettercount = 0;
             var letternumber = setInterval
             (
             function() 
             {
-                textblock.innerHTML += words.charAt(lettercount);
+                textblock.innerHTML += arrg[rando].charAt(lettercount);
                 lettercount++;
                 
+                
 
-            if(lettercount == words.length) 
+            if(lettercount == arrg[rando].length) 
             {
                 clearInterval(letternumber);
             }
 
             }
-            , 30);
+            , 40);
         
         }
-
-    
 
     </script>
 
